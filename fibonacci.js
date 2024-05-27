@@ -19,7 +19,7 @@ function fibonacciR(n, fibArr) {
   if (n > 0) {
     let isFirstCall;
     if (fibArr === undefined) {
-      fibArr = [0, 1];
+      fibArr = [0];
       isFirstCall = true;
     }
     let fib;
@@ -38,7 +38,7 @@ function fibonacciR(n, fibArr) {
   } else return 'Argument must be greater than 0';
 }
 
-const testVar = 2;
+const testVar = 10;
 
 console.log(fibonacci(testVar));
 console.log(fibonacciR(testVar));
